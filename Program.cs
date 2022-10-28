@@ -186,3 +186,85 @@
 //         }
 //     return array3D;
 // }
+
+
+// Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
+// Например, на выходе получается вот такой массив:
+// 01 02 03 04
+// 12 13 14 05
+// 11 16 15 06
+// 10 09 08 07
+
+
+// Console.WriteLine("Введите размер массива: ");
+// int a = int.Parse(Console.ReadLine()!);
+
+// int[,] array = FillArray(a,a);
+
+// PrintArray(array);
+
+// void PrintArray(int[,] array){
+// for(int x = 0; x < array.GetLength(0); x++){
+//     for(int y = 0; y < array.GetLength(1); y++){
+//         Console.Write("{0,4}", $"{array[x,y]} ");
+//         }
+//         Console.WriteLine();
+//         }
+//         }
+
+
+// int[,] FillArray(int x, int y){
+//     int [,] result = new int[x,y];
+//     int temp = 1;
+//     int k = 0;
+
+//     if(a%2 == 0)
+//     while (temp <= result.GetLength(0) * result.GetLength(1)){
+//         for(int j = k; j < result.GetLength(0) - 1 - k; j++){ 
+//         result[k,j] = temp;
+//         temp++;    
+//         }
+
+//         for(int i = k; i < result.GetLength(1) - 1 - k; i++){
+//         result[i,result.GetLength(1) - 1 - k] = temp;
+//         temp++;      
+//         }
+//         for(int j = result.GetLength(0) - 1 - k; j > k;  j--){
+//         result[result.GetLength(0) - 1 - k,j] = temp;
+//         temp++;
+//         }
+
+//         for(int i = result.GetLength(1) - 1 - k; i > k; i--){
+//         result[i,k] = temp;
+//         temp++;      
+//         }
+//         k++;
+//         }
+
+//     if(a%2 != 0)
+//     while (temp <= result.GetLength(0) * result.GetLength(1)){
+
+//         for(int j = k; j < result.GetLength(0) - k; j++){ 
+//         result[k,j] = temp;
+//         temp++;    
+//         }
+
+//         for(int i = k + 1; i < result.GetLength(1) - 1 - k; i++){
+//         result[i,result.GetLength(1) - 1 - k] = temp;
+//         temp++;      
+//         }
+
+//         for(int j = result.GetLength(0) - 1 - k; j > k;  j--){
+//         result[result.GetLength(0) - 1 - k,j] = temp;
+//         temp++;
+//         }
+
+//         for(int i = result.GetLength(1) - 1 - k; i > k; i--){
+//         result[i,k] = temp;
+//         temp++;      
+//         }
+//         k++;
+//         }
+
+//     return result;
+//     }
